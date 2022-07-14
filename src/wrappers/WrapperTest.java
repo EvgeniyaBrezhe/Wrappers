@@ -58,8 +58,6 @@ public class WrapperTest {
         System.out.println("NaN: " + nanValue);
         System.out.println("Infinity: " + infinityValue);
 
-        System.out.println("_______________________________");
-
         if (nanValue.isNaN()) {
             System.out.println("Value of nanValue: " + "NaN");
         }
