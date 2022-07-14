@@ -69,6 +69,7 @@ public class WrapperTest {
         Long myLong1 = 120L;
         Long myLong2 = 120L;
         System.out.println(myLong1 == myLong2);
+
         myLong1 = 1200L;
         myLong2 = 1200l;
         System.out.println(myLong1 == myLong2);
