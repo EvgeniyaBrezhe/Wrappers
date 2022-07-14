@@ -6,10 +6,8 @@ import java.util.Scanner;
 public class StringTest {
 
     public static void main(String[] args) {
-        /**
-         * Tasks 2.1-2.5.
-         */
 
+        // Tasks 2.1-2.5.
         String myStr = "my string";
         String myStr2 = new String("my string 2");
         char myData[] = {'z', 'h', 'e', 'n', 'y', 'a'};
@@ -19,16 +17,11 @@ public class StringTest {
         StringBuilder myBuilder = new StringBuilder("string builder");
         String myStr5 = myBuilder.toString();
 
-        /**
-         * Tasks 3.1-3.2.
-         */
+        //Tasks 3.1-3.2.
         String fruits = "Апельсин,Яблоко,Гранат,Груша";
         String[] fruitsArray = fruits.split(",");
 
-        /**
-         * Task 3.3
-         */
-
+        //Task 3.3
         Integer[] fruitLengths = new Integer[fruitsArray.length];
         for (int i = 0; i < fruitsArray.length; i++) {
             fruitLengths[i] = fruitsArray[i].length();
@@ -40,28 +33,19 @@ public class StringTest {
         String maxLengthFruit = fruitsArray[getFruitIndex].toLowerCase();
         System.out.println(maxLengthFruit);
 
-        /**
-         * Task 3.4.
-         */
-
+        //Task 3.4.
         int shortFruitBegin = 0;
         int shortFruitEnd = 3;
         String shortFruit = maxLengthFruit.substring(shortFruitBegin, shortFruitEnd);
         System.out.println(shortFruit);
 
-        /**
-         * Tasks 3.5-3.8.
-         */
-
+        //Tasks 3.5-3.8.
         String newString = "   Я_новая_строка      ";
         String trimmedString = newString.trim();
         String changedString = trimmedString.replace("_", " ");
         System.out.println(changedString);
 
-        /**
-         * Tasks 3.9-3.10.
-         */
-
+        //Tasks 3.9-3.10.
         Scanner myInput = new Scanner(System.in);
         System.out.println("Введите текст");
 
@@ -77,10 +61,7 @@ public class StringTest {
             System.out.println("Вы ввели: " + customText);
         }
 
-        /**
-         * Tasks 4.1 - 4.4.
-         */
-
+        //Tasks 4.1 - 4.4.
         StringBuilder anotherBuilder = new StringBuilder(myStr + myStr2 + myStr3 + "\n" +
                 myStr4 + myStr5 + fruits + "\n" +
                 maxLengthFruit + shortFruit + newString + "\n"
